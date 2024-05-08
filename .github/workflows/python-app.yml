@@ -32,10 +32,10 @@ jobs:
             echo "NumPy is not installed"
           fi
       - name: Check Pygame installation
-      run: |
-        if pip list | grep -q "pygame"; then
-          echo "Pygame is installed"
-        else
-          echo "Pygame is not installed"
-        fi
+        run: |
+          if pip list | grep -q "pygame"; then
+            echo "Pygame is installed"
+          else
+            echo "Pygame is not installed"
+          fi
 
