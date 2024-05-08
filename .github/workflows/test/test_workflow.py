@@ -4,4 +4,6 @@ import pytest
 
 # Example test case
 def test_example():
-    assert 1 == 1
+    print("success")
+
+test_example()
