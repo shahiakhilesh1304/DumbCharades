@@ -23,7 +23,7 @@ The Word Display App displays words related to different states and cities in In
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/word-display-app.git
+    git clone https://github.com/shahiakhilesh1304/DumbCharades.git
     ```
 
 2. Install the required Python libraries:
@@ -31,20 +31,27 @@ The Word Display App displays words related to different states and cities in In
     ```bash
     pip install pygame
     ```
+    [PyGame](https://pypi.org/project/pygame/)
 
+
+   ```bash
+    pip install numpy
+    ```
+    [NumPy](https://pypi.org/project/numpy/)
+   
+   
 ## Usage
 
 1. Navigate to the project directory:
 
     ```bash
-    cd word-display-app
+    cd DumbCharades/executableFiles/dumbcharade
+    ls
+    ##This has two one for 30 sec one for 1 min open any I am selecting 30s
+    cd dumbcharade-30s
     ```
 
-2. Run the main Python script:
-
-    ```bash
-    python main.py
-    ```
+2. Double click the main:
 
 3. Follow the on-screen instructions to interact with the application.
 
