@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
         with:
@@ -24,7 +24,18 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install pygame
           python -m pip install numpy
-          pip install flake8 pytest
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
+      - name: Check NumPy installation
+        run: |
+          if pip list | grep -q "numpy"; then
+            echo "NumPy is installed"
+          else
+            echo "NumPy is not installed"
+          fi
+      - name: Check Pygame installation
+      run: |
+        if pip list | grep -q "pygame"; then
+          echo "Pygame is installed"
+        else
+          echo "Pygame is not installed"
+        fi
 
